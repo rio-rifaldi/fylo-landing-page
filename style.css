@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+    #email:valid{
+        color: green;
+    }
+    #email_2:not(:placeholder-shown):invalid{
+    outline: 1.7px solid red;
+    color:red;
+    }
+ 
+
+
+}

@@ -1,23 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla Tailwind CSS Boilerplate</title>
-    <script type="module" src="main.js" defer></script>
-  </head>
-  <body class="px-4 h-screen flex items-center justify-center">
-    <div class="bg-white p-8 rounded shadow-md">
-      <h1 class="text-2xl font-semibold mb-4">Welcome to Tailwind CSS!</h1>
-      <p class="text-gray-700">
-        Tailwind CSS is a utility-first CSS framework that helps you quickly
-        build modern and responsive user interfaces.
-      </p>
-      <button
-        class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-      >
-        Get Started
-      </button>
-    </div>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images//favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="main.js" defer></script>
+  <title>Frontendmentor | Fylo landing page</title>
+
+</head>
+<body class="font-open-sans">
+       <!-- >>--------------------- navigation section ---------------------<<  --> 
+
+
+
+
+  <nav class="flex justify-between items-center p-4 px-5 font-raleway md:px-7 lg:px-9 lg:p-6 mb-8 max-w-[1700px] xl:mx-auto">
+    <img src="./images/logo.svg" alt="" class="w-20 md:w-24">
+    <ul class="flex items-center gap-3 text-sm md:text-md md:gap-5 lg:gap-5">
+      <li><a href="#" class="hover:text-bright-blue">Features</a></li>
+      <li><a href="#" class="hover:text-bright-blue" >Team</a></li>
+      <li><a href="#" class="hover:text-bright-blue">Sign In</a></li>
+    </ul>
+  </nav>
+
+  <main class="">
+    <!-- >>--------------------- ilustration 1 section ---------------------<<  --> 
+    <section class=" my-10 mx-12 lg:flex lg:gap-5 lg:justify-evenly max-w-[1700px] xl:mx-auto">
+      <img src="./images/illustration-1.svg" alt="" class="md:max-w-2xl mx-auto lg:mx-0 lg:max-w-xl lg:order-2">
+
+      <div class="text-center lg:order-1">
+              <h1 class="text-2xl font-extrabold my-12 text-very-dark-blue font-raleway md:max-w-xl mx-auto md:text-3xl">All your files in one secure location, accessible anywhere.</h1>
+              <p class="my-5 text-base  text-desaturated-blue md:max-w-xl mx-auto mb-10 leading-7 md:text-lg">
+                Fylo stores your most important files in one secure location. 
+                Access them wherever you need, share and collaborate with friends, 
+                family, and co-workers.
+              </p>
+
+              <div class="flex md:text-left items-center flex-col md:flex-row md:justify-center md:gap-6 relative">
+
+
+                  <input type="email"  id="email" placeholder="Enter your email" autocomplete="off"  class="peer text-base w-full border-2 border-slate-600 px-6 py-3 rounded-md font-medium focus:outline-0 invalid:border-red-600 invalid:text-red-600 valid:text-black md:w-[65%] lg:w-[75%]">
+    
+                  <p class="my-1 mt-2 ml-1 text-red-600 peer-invalid:block text-sm hidden self-start md:absolute md:left-6 md:top-16">please check your email</p>
+
+  
+                <button type="submit" class="bg-bright-blue w-full py-3 my-4 rounded-md text-center text-md font-extrabold text-white md:w-[25%] hover:bg-bright-blue-hover">Get Started</button>
+              </div>
+          </div>
+      </section>
+      
+     <!-- >>--------------------- ilustration 2 section ---------------------<<  --> 
+
+
+      <section class=" mt-24 py-20 pt-36  w-full  bg-no-repeat bg-[url('./images/bg-curve-mobile.svg')] bg-[length:230rem_76rem] bg-bottom lg:bg-[url('./images/bg-curve-desktop.svg')] lg:bg-[length:230rem_60rem] ">
+
+        <div class="lg:flex lg:gap-5 lg:justify-evenly lg:items-center max-w-[1700px] xl:mx-auto">
+            <img src="./images/illustration-2.svg" alt="" class="md:max-w-xl mx-auto lg:mx-0 lg:order-2 px-12 ">
+          
+            <div class="mt-28 md:order-1 " > 
+              <h1 class="text-xl font-raleway font-bold my-8 text-center text-very-dark-blue md:max-w-xl md:mx-auto lg:text-3xl px-12">Stay productive, wherever you are</h1>
+              <p class="text-desaturated-blue text-base md:max-w-xl md:mx-auto md:text-lg px-12">Never let location be an issue when accessing your files. Fylo has you 
+                covered for all of your file storage needs.</p>
+              <p class="text-desaturated-blue text-base my-6 md:max-w-xl md:mx-auto md:text-lg px-12">Securely share files and folders with friends, family and colleagues for 
+                  live collaboration. No email attachments required!</p>
+
+                  <div class="text-center group">
+                      <a href="#" class=" text-moderate-cyan text-base after:content-arrow after:ml-2 after:inline-block after:translate-y-3 pb-2 border-b-2 border-moderate-cyan group-hover:opacity-60 ">See how Fylo works</a>
+                      <!-- <img src="./images/icon-arrow.svg" alt="" class="inline-block w-6"> -->
+
+                </div>
+
+                    <!-- >>--------------------- card ---------------------<<  --> 
+                
+                  <div class="max-w-lg py-6 px-8 mx-7 shadow-xl mt-20  md:mx-auto rounded-md ">
+                      <img src="./images/icon-quotes.svg" alt="icon-quotes" class="w-5" >
+                      <p class="text-xs md:text-sm mt-4 leading-5 md:leading-7 font-base text-very-dark-blue">Fylo has improved our team productivity by an order of magnitude. Since 
+                      making the switch our team has become a well-oiled collaboration machine.</p>
+
+                      <img src="./images/avatar-testimonial.jpg" alt="avatar-testimonial" class="rounded-full w-10 md:w-12 my-2 inline">
+
+                        <div class="inline-block ml-3 translate-y-2 md:translate-y-4">
+                          <h1 class = "text-xs md:text-sm font-extrabold text-very-dark-blue tracking-widest">Kyle Burton</h1>
+                          <p class="text-[.6rem] md:text-xs">Founder & CEO, Huddle</p>
+                        </div>
+                  </div>
+
+            </div>
+          </div>
+      </section>
+
+           <!-- >>--------------------- get early access today section ---------------------<<  --> 
+      
+      <section class=" py-16 px-6 bg-desaturated-blue lg:flex lg:gap-10 ">
+            <div class="md:max-w-lg mx-auto lg:text-left text-center">
+              <h1 class="text-white text-3xl font-raleway font-extrabold mb-6 text">Get early access today</h1>
+              <p class="text-white font-base lg:text-baase">It only takes a minute to sign up and our free starter tier is extremely generous. 
+                 If you have any questions, our support team would be happy to help you.</p>
+            </div>
+
+            <div class="my-5 w-[80%] md:max-w-lg lg:self-start mx-auto">
+              <input type="email" id="email_2" autocomplete="off" placeholder="email@example.com" class=" px-6 py-3 w-full rounded focus:outline-slate-500 focus:outline-1 peer  ">
+
+              <p class="text-white text-left font-medium w-[70%] mt-1 hidden peer-invalid:block">please check your email</p>
+
+              <button type="submit" class=" bg-bright-blue py-3 my-3 rounded text-center w-full text-white font-bold text-md focus:outline-black hover:bg-sky-500 lg:w-[40%] lg:ml-1" >Get Started For Free</button>
+            </div>
+      </section>
+  </main>
+
+         <!-- >>--------------------- footer section ---------------------<<  --> 
+
+      <footer class="bg-very-dark-blue text-white px-10 py-12 text-sm  ">
+        <div class="flex flex-col gap-8 md:flex-row md:justify-between md:items-center max-w-[1700px] lg:mx-auto">
+
+   
+          <div>
+            <img src="./images/foooter-logo.svg" alt="" class="mb-8">
+            <p class="before:content-phone mb-4 before:inline-block before:mr-5">Phone: +1-543-123-4567</p>
+            <p  class="before:content-email before:inline-block before:mr-5">example@fylo.com</p>
+          </div>
+
+          <ul class="flex flex-col gap-3 " >
+            <li><a href="#" class="hover:text-bright-blue">About Us</a></li>
+            <li><a href="#" class="hover:text-bright-blue">Jobs</a></li>
+            <li><a href="#" class="hover:text-bright-blue" >Press</a></li>
+            <li><a href="#" class="hover:text-bright-blue">Blog</a></li>
+          </ul>
+
+          <ul class="flex flex-col gap-3">
+            <li><a href="#" class="hover:text-bright-blue" >Contact Us</a></li>
+            <li><a href="#" class="hover:text-bright-blue">Terms</a></li>
+            <li><a href="#" class="hover:text-bright-blue" >Privacy</a></li>  
+          </ul>
+
+          <div class="flex gap-5 cursor-pointer justify-center" >
+                <div class="border-2 border-white p-2 rounded-full group hover:border-sky-500 w-11 h-11 grid place-items-center">
+                  <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path class="group-hover:fill-sky-500" fill="#ffffff" fill-rule="evenodd" d="M12 5.5H9v-2a1 1 0 0 1 1-1h1V0H9a3 3 0 0 0-3 3v2.5H4V8h2v8h3V8h2l1-2.5z" clip-rule="evenodd"/></svg>
+                </div>
+
+                <div class="border-2 border-white p-2 rounded-full group hover:border-sky-500 grid place-items-center w-11 h-11">
+                  <svg  class="w-5" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 100 100 " height="24"><path class="group-hover:fill-sky-500" fill="#ffffff" d="M98.488 9.473a42.1 42.1 0 0 1-11.634 3.189A20.078 20.078 0 0 0 95.736 1.5a40.35 40.35 0 0 1-12.8 4.887A20.189 20.189 0 0 0 48.007 20.2a20.79 20.79 0 0 0 .468 4.6A57.15 57.15 0 0 1 6.857 3.681a20.2 20.2 0 0 0 6.2 26.986 19.94 19.94 0 0 1-9.118-2.487v.22a20.284 20.284 0 0 0 16.177 19.841 20.152 20.152 0 0 1-5.294.665A17.853 17.853 0 0 1 11 48.561a20.383 20.383 0 0 0 18.867 14.065 40.57 40.57 0 0 1-25.034 8.612A37.819 37.819 0 0 1 0 70.96a56.843 56.843 0 0 0 30.974 9.061c37.154 0 57.468-30.777 57.468-57.455 0-.893-.031-1.754-.074-2.61a40.28 40.28 0 0 0 10.12-10.483Z"/></svg>
+                </div>
+
+                <div class="border-2 border-white p-2 rounded-full group grid place-items-center w-11 h-11">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 101.996 102" ><defs><radialGradient id="a" cx="13.551" cy="102.482" r="133.147" gradientUnits="userSpaceOnUse"><stop offset=".09" stop-color="#fa8f21"/><stop offset=".78" stop-color="#d82d7e"/></radialGradient><radialGradient id="b" cx="61.859" cy="107.051" r="104.938" gradientUnits="userSpaceOnUse"><stop offset=".64" stop-color="#8c3aaa" stop-opacity="0"/><stop offset="1" stop-color="#8c3aaa"/></radialGradient></defs><path fill="url(#a)" d="M34,51A17,17,0,1,1,51,68,17,17,0,0,1,34,51m-9.191,0A26.188,26.188,0,1,0,51,24.812,26.187,26.187,0,0,0,24.812,51M72.1,23.774a6.12,6.12,0,1,0,6.122-6.118h0a6.123,6.123,0,0,0-6.12,6.118M30.4,92.513a28.187,28.187,0,0,1-9.471-1.754,15.85,15.85,0,0,1-5.866-3.815,15.735,15.735,0,0,1-3.815-5.862A28.161,28.161,0,0,1,9.49,71.611c-.247-5.376-.3-6.991-.3-20.61s.053-15.23.3-20.61a28.374,28.374,0,0,1,1.754-9.471,15.85,15.85,0,0,1,3.815-5.866,15.718,15.718,0,0,1,5.866-3.815A28.161,28.161,0,0,1,30.4,9.484c5.376-.247,6.991-.3,20.6-.3s15.23.053,20.61.3a28.373,28.373,0,0,1,9.471,1.754,15.8,15.8,0,0,1,5.866,3.815,15.8,15.8,0,0,1,3.815,5.866,28.162,28.162,0,0,1,1.754,9.471c.247,5.38.3,6.991.3,20.61s-.049,15.23-.3,20.61a28.294,28.294,0,0,1-1.754,9.471,16.886,16.886,0,0,1-9.681,9.677,28.161,28.161,0,0,1-9.471,1.754c-5.376.247-6.991.3-20.61.3s-15.23-.049-20.6-.3M29.974.309A37.4,37.4,0,0,0,17.595,2.678,25.015,25.015,0,0,0,8.56,8.56a24.918,24.918,0,0,0-5.883,9.034A37.407,37.407,0,0,0,.309,29.974C.058,35.412,0,37.15,0,51S.058,66.588.309,72.026A37.405,37.405,0,0,0,2.678,84.405,24.931,24.931,0,0,0,8.56,93.44a25.076,25.076,0,0,0,9.034,5.883,37.43,37.43,0,0,0,12.379,2.369c5.441.247,7.176.309,21.026.309s15.588-.058,21.026-.309a37.405,37.405,0,0,0,12.379-2.369A26.075,26.075,0,0,0,99.322,84.405a37.3,37.3,0,0,0,2.369-12.379c.247-5.442.3-7.176.3-21.026s-.058-15.588-.3-21.026a37.394,37.394,0,0,0-2.369-12.379A25.08,25.08,0,0,0,93.44,8.56a24.955,24.955,0,0,0-9.03-5.883A37.347,37.347,0,0,0,72.03.309C66.593.062,64.854,0,51,0s-15.59.058-21.03.309" data-name="Path 14"/><path fill="url(#b)" d="M34,51A17,17,0,1,1,51,68,17,17,0,0,1,34,51m-9.191,0A26.188,26.188,0,1,0,51,24.812,26.187,26.187,0,0,0,24.812,51M72.1,23.774a6.12,6.12,0,1,0,6.122-6.118h0a6.123,6.123,0,0,0-6.12,6.118M30.4,92.513a28.187,28.187,0,0,1-9.471-1.754,15.85,15.85,0,0,1-5.866-3.815,15.735,15.735,0,0,1-3.815-5.862A28.161,28.161,0,0,1,9.49,71.611c-.247-5.376-.3-6.991-.3-20.61s.053-15.23.3-20.61a28.374,28.374,0,0,1,1.754-9.471,15.85,15.85,0,0,1,3.815-5.866,15.718,15.718,0,0,1,5.866-3.815A28.161,28.161,0,0,1,30.4,9.484c5.376-.247,6.991-.3,20.6-.3s15.23.053,20.61.3a28.373,28.373,0,0,1,9.471,1.754,15.8,15.8,0,0,1,5.866,3.815,15.8,15.8,0,0,1,3.815,5.866,28.162,28.162,0,0,1,1.754,9.471c.247,5.38.3,6.991.3,20.61s-.049,15.23-.3,20.61a28.294,28.294,0,0,1-1.754,9.471,16.886,16.886,0,0,1-9.681,9.677,28.161,28.161,0,0,1-9.471,1.754c-5.376.247-6.991.3-20.61.3s-15.23-.049-20.6-.3M29.974.309A37.4,37.4,0,0,0,17.595,2.678,25.015,25.015,0,0,0,8.56,8.56a24.918,24.918,0,0,0-5.883,9.034A37.407,37.407,0,0,0,.309,29.974C.058,35.412,0,37.15,0,51S.058,66.588.309,72.026A37.405,37.405,0,0,0,2.678,84.405,24.931,24.931,0,0,0,8.56,93.44a25.076,25.076,0,0,0,9.034,5.883,37.43,37.43,0,0,0,12.379,2.369c5.441.247,7.176.309,21.026.309s15.588-.058,21.026-.309a37.405,37.405,0,0,0,12.379-2.369A26.075,26.075,0,0,0,99.322,84.405a37.3,37.3,0,0,0,2.369-12.379c.247-5.442.3-7.176.3-21.026s-.058-15.588-.3-21.026a37.394,37.394,0,0,0-2.369-12.379A25.08,25.08,0,0,0,93.44,8.56a24.955,24.955,0,0,0-9.03-5.883A37.347,37.347,0,0,0,72.03.309C66.593.062,64.854,0,51,0s-15.59.058-21.03.309" data-name="Path 15"/></svg>
+                </div>
+          </div>
+               </div>
+      </footer>
+
+ 
+  
+  
+
+</body>
 </html>
